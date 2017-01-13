@@ -14,7 +14,7 @@ Settings → Editor → Tab Mode => Soft
 
 + 禁止回车实现自动补全
 ```
-Settings → Packages → Autocomplete Plus => Tab only
+Settings → Packages → Autocomplete Plus → Settings → Keymap For Confirming A Suggestion => tab
 ```
 
 未完待续。。。。。。
