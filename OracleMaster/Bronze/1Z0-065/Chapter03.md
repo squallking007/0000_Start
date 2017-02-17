@@ -4,4 +4,4 @@
 
 **EM Expressとは　★★★**
 
-**EM Express**(Enterprise Manager Database Express)は、１つのデータベースを簡易的に管理したり、パフォーマンスを監視するための、**Webペース**のデータベース管理ツールです。
++ **EM Express**(Enterprise Manager Database Express)は、１つのデータベースを簡易的に管理したり、パフォーマンスを監視するための、**Webペース**のデータベース管理ツールです。
