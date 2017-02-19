@@ -20,15 +20,15 @@
 
 + EM Expressの手動で構成手順
 
-    1. リスナープロセスを起動します
+    １. リスナープロセスを起動します。
 
-    2. 初期化パラメータDISPATCHERSにPROTOCOL=TCP属性を追加し、TCPディスパッチを有効にします。
+    ２. 初期化パラメータDISPATCHERSにPROTOCOL=TCP属性を追加し、TCPディスパッチを有効にします。
 
     ```
     dispatchers="(PROTOCOL=TCP)(SERVICE=<sid>XDB)"
     ```  
 
-    3. DBMS_XDB_CONFIG.sethTTPSPortプロシージャを実行して、ポートを指定する。(このプロシージャを実行するには、SYSDBAとして接続する必要がある。)
+    ３. DBMS_XDB_CONFIG.sethTTPSPortプロシージャを実行して、ポートを指定する。(このプロシージャを実行するには、SYSDBAとして接続する必要がある。)
 
     ```sql
     exe DBMS_XDB_CONFIG.setHTTPSPort(5000):
