@@ -55,3 +55,5 @@
 + EM_EXPRESS_ALLロール：すべての機能を使用できる。
 
 ## 3.3 SQL*PlusおよびSQL Developerを使用したデータベースへのアクセス
+
+**SQL*Plusの起動方法　★★**
