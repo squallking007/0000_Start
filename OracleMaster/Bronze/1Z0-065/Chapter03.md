@@ -73,3 +73,9 @@
  + SQLスクリプトファイルを作成し、バッチモードで実行する。
  
  + SQL*Plusを終了せずにOSコマンドを実行する。
+
+**SQL Developerの起動方法　★★**
+
++ SQL Developerはデータベースにアクセスするためのグラフィカルツールである。
+
++ SQL Developerを起動するにはSQL Developerディレクトリ($ORACLE_HOME/sqldeveloper)にナビゲートしてsqldeveloper.shを実行する。
