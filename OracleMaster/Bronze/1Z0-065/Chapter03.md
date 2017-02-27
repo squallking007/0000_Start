@@ -76,6 +76,14 @@
 
 **SQL Developerの起動方法　★★**
 
-+ SQL Developerはデータベースにアクセスするためのグラフィカルツールである。
++ SQL Developerはデータベースにアクセスするための**グラフィカルツール**である。
 
-+ SQL Developerを起動するにはSQL Developerディレクトリ($ORACLE_HOME/sqldeveloper)にナビゲートしてsqldeveloper.shを実行する。
++ SQL Developerを起動するにはSQL Developerディレクトリ($ORACLE_HOME/sqldeveloper)にナビゲートして**sqldeveloper.sh**を実行する。
+
+**SQL Developerの使用方法　★★★**
+
++ SQL Developerの使用パターンには以下の２つがある。
+
+ + 通常モードでスキーマ・オブジェクトを参照、作成、編集および削除するような、スキーマ・オブジェクトに対する作業を実行する。
+ 
+ + DBAナビゲータを使用してDBA接続をすることで、Oracleデータベースの起動、停止を含むデータベース管理タスクを実行する。
