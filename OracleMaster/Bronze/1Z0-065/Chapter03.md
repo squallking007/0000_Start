@@ -50,9 +50,9 @@
 
 + EM Expressを使用するには、ユーザーに```EM_EXPRESS_BASICロール``` か ```EM_EXPRESS_ALLロール```のいずれかが付与されている必要がある。
 
-+ ```EM_EXPRESS_BASICロール```：読み取り専用モードでページを表示できる。
++ **EM_EXPRESS_BASICロール**：読み取り専用モードでページを表示できる。
 
-+ ```EM_EXPRESS_ALLロール```：すべての機能を使用できる。
++ **EM_EXPRESS_ALLロール**：すべての機能を使用できる。
 
 ## 3.3 SQL*PlusおよびSQL Developerを使用したデータベースへのアクセス
 
