@@ -7,4 +7,4 @@ OracleMasterは、日本オラクル社が定めるデータベース認定試�
 
 ## リンク
 
-- [ディレクトリ](./1Z0-065/directory.md)
+- [ディレクトリ](./Bronze/directory.md)
