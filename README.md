@@ -1,2 +1,2 @@
 # 内容
-+ [OracleMasterBronzeディレクトリ](OracleMaster/Bronze/directory.md)
++ [Oracle Master Bronze](OracleMaster/Bronze/directory.md)
