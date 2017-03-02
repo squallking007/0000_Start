@@ -172,3 +172,42 @@ ALTER SYSTEM SET パラメータ名 = 値 [SCOPE={MEMORY | SPFILE | BOTH}];
 |自動共有メモリー管理(ASMM) +</br>自動PGAメモリー管理 |SGAとインスタンスPGAのサイズ |・SGA_TARGET</br>・SGA_MAX_SIZE(静的)</br>・PGA_AGGREGATE_TARGET |
 |手動共有メモリー管理 +</br>自動PGAメモリー管理 |SGAの各コンポーネントのサイズとインスタンスPGAのサイズ |・DB_CACHE_SIZE</br>・SHARED_POOL_SIZE</br>・JAVA_POOL_SIZE</br>・STREAMS_POOL_SIZE</br>・LARGE_POOL_SIZE</br>・LOG_BUFFER(静的)</br>・PGA_AGGREATE_TARGET |
  
++ 自動メモリー管理(AMM)の設定
+
+```SQL
+ALTER SYSTEM SET MEMORY_MAX_TARGET = サイズ SCOPE = SPFILE;  // 実行後再起動
+ALTER SYSTEM SET MEMORY_TARGET = サイズ;
+ALTER SYSTEM SET SGA_TARGET = 0;
+ALTER SYSTEM SET PGA_AGGREGATE_TARGET = 0;
+```
+
++ 自動メモリー管理(AMM)の際、SGATARGETおよびPGA_AGGREGATE_TARGETに値を設定すると、その値はSGAまたはインスタンスPGAのサイズの最小値として機能する。また、SGAの各コンポーネントサイズを設定するパラメータ(DB_CACHE_SIZEなど)に値を設定すると、その値は各コンポーネントのサイズの最小値として機能する。
+
++ 自動共有メモリー管理(ASMM)の設定
+
+```SQL
+ALTER SYSTEM SET MEMORY_TARGET = 0;                    // 自動メモリー管理の無効化
+ALTER SYSTEM SET SGA_MAX_SIZE = サイズ SCOPE = SPFILE; // 実行後再起動
+ALTER SYSTEM SET SGA_TARGET = サイズ;
+ALTER SYSTEM SET PGA_AGGREGATE_TARGET = サイズ;
+ALTER SYSTEM SET SHARED_POOL_SIZE = 0;
+ALTER SYSTEM SET LARGE_POOL_SIZE = 0;
+ALTER SYSTEM SET JAVA_POOL_SIZE = 0;
+ALTER SYSTEM SET DB_CACHE_SIZE = 0;
+ALTER SYSTEM SET STREAMS_POOL_SIZE = 0;
+```
+
++ 自動共有メモリー管理(ASMM)の際、SGAの各コンポーネントサイズを設定するパラメータ(DB_CACHE_SIZEなど)に値を設定すると、その値は各コンポーネントサイズの最小値として機能する。
+
++ 手動共有メモリー管理の設定
+
+```SQL
+ALTER SYSTEM SET MEMORY_TARGET = 0; // 自動メモリー管理の無効化
+ALTER SYSTEM SET SGA_TARGET = 0;    // 自動共有メモリー管理の無効化
+ALTER SYSTEM SET SHARED_POOL_SIZE = サイズ;
+ALTER SYSTEM SET LARGE_POOL_SIZE = サイズ;
+ALTER SYSTEM SET JAVA_POOL_SIZE = サイズ;
+ALTER SYSTEM SET DB_CACHE_SIZE = サイズ;
+ALTER SYSTEM SET STREAMS_POOLS_SIZE = サイズ;
+ALTER SYSTEM SET PGA_AGGREGATE_TARGET = サイズ;
+```
