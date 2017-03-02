@@ -57,3 +57,11 @@
  + SQL Developerを使用する。
  
  + Enterprise Manager Cloud Controlを使用する。
+
++ データベースがオープンするまでのステップ
+
+ 1. インスタンス起動
+ 
+ 2. データベースマウント
+ 
+ 3. データベースオープン
