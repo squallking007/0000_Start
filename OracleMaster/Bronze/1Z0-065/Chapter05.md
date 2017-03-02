@@ -211,3 +211,11 @@ ALTER SYSTEM SET DB_CACHE_SIZE = サイズ;
 ALTER SYSTEM SET STREAMS_POOLS_SIZE = サイズ;
 ALTER SYSTEM SET PGA_AGGREGATE_TARGET = サイズ;
 ```
+
+## リンク
+
+- [ディレクトリ](./../directory.md)
+
+- 前章：[第四章 Oracleネットワーク環境の構成](Chapter04.md)
+
+- 次章：第六章 データベース記憶域構造の管理
