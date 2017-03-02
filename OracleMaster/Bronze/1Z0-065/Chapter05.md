@@ -48,4 +48,12 @@
 
 **インスタンスの起動　★★★★★**
 
-+ 
++ インスタンスを起動してデータベースをオープンする方法は次の通り
+
+ + SQL*Plusから```STARTUP```コマンドを使用する。
+ 
+ + Windows サービスプログラムを使用する。
+ 
+ + SQL Developerを使用する。
+ 
+ + Enterprise Manager Cloud Controlを使用する。
