@@ -159,3 +159,16 @@ ALTER SYSTEM SET パラメータ名 = 値 [SCOPE={MEMORY | SPFILE | BOTH}];
 + サーバーパラメータファイルを使用している場合に、SCOPE句を省略してインスタンスを起動すると、デフォルトで「**SCOPE=BOTH**」が設定される。
 
 + 静的パラメータを変更する際は「**SCOPE=SPFILE**」を明示的に指定する必要がある。
+
+## 5.3 メモリーコンポーネントの管理
+
+**メモリーコンポーネントの管理方法の設定　★★★★★**
+
++ メモリーコンポーネントの管理方法
+ 
+|管理方法 |管理者が指定する事項 |設定する初期化パラメータ |
+|---- |---- |---- |
+|自動メモリー管理(AMM) |Oracleデータベースが使用可能なメモリー</br>サイズ(SGA + インスタンスPGA) |・MEMORY_TARGET</br>・MEMORY_MAX_TARGET(静的) |
+|自動共有メモリー管理(ASMM) +</br>自動PGAメモリー管理 |SGAとインスタンスPGAのサイズ |・SGA_TARGET</br>・SGA_MAX_SIZE(静的)</br>・PGA_AGGREGATE_TARGET |
+|手動共有メモリー管理 +</br>自動PGAメモリー管理 |SGAの各コンポーネントのサイズとインスタンスPGAのサイズ |・DB_CACHE_SIZE</br>・SHARED_POOL_SIZE</br>・JAVA_POOL_SIZE</br>・STREAMS_POOL_SIZE</br>・LARGE_POOL_SIZE</br>・LOG_BUFFER(静的)</br>・PGA_AGGREATE_TARGET |
+ 
