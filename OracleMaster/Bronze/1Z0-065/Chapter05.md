@@ -219,4 +219,4 @@ ALTER SYSTEM SET PGA_AGGREGATE_TARGET = サイズ;
 
 - 前章：[第四章 Oracleネットワーク環境の構成](Chapter04.md)
 
-- 次章：[第六章 データベース記憶域構造の管理](Chapter04.md)
+- 次章：[第六章 データベース記憶域構造の管理](Chapter06.md)
