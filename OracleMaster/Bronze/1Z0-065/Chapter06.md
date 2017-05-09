@@ -108,20 +108,13 @@ CREATE TABLESPACE 表領域名 DATAFILE 'データファイル名'　SIZE サイ
     [SEGMENT SPACE MANAGEMENT {AUTO | MANUAL}];
 ```
 
-- 嵌套列表1
- + 嵌套列表2
- + 嵌套列表2
-   * 嵌套列表3
-   * 嵌套列表3
-- 嵌套列表2
+-  表領域を作成する際は、以下のオプションを指定できます。
+  +  ```EXTENT MANAGEMENT LOCAL``` ローカル管理表領域です。
+    * **AUTOALLOCATE** データベースが自動的にエクステントの割り当てを管理する。最小エエクステントサイズは64KB。デフォルト値。
+    * **UNIFORM SIZE サイズ** エクステ  ントが<サイズ>に指定したサイズで均一に管理される。サイズを指定しない場合のデフォルトは1MB。
+  +  ```SEGMENT SPACE MANAGEMENT```   グメント領域の管理方法です。 
 
 
-- 表領域を作成する際は、以下のオプションを指定できます。
-  +  ```EXTENT MANAGEMENT LOCAL``` ローカル管理表領域です。
-
-    *  **AUTOALLOCATE** データベースが自動的にエクステントの割り当てを管理する。最小エエクステントサイズは64KB。デフォルト値。
-    *  **UNIFORM SIZE サイズ** エクステ  ントが<サイズ>に指定したサイズで均一に管理される。サイズを指定しない場合のデフォルトは1MB。
-  +  ```SEGMENT SPACE MANAGEMENT```   グメント領域の管理方法です。 
 
 
 
