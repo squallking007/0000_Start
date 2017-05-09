@@ -174,12 +174,31 @@ ALTER DATABASE DATAFILE 'データファイル名'
   
   + SQL文を使用した場合はデフォルトでは削除されません。
 
+- SQL文を使用して表領域を削除するには、```DROP TABLESPACE文```を使用します。空でない表領域を内部のセグメントも含めて削除する場合は「```INCLUDING CONTENTS```」を指定します。
 
+- 表領域の削除文
 
+```SQL
+DROP TABLESPACE 表領域名 INCLUDING CONTENTS;
+```
 
+- 表領域の削除文(データファイルも削除)
 
+```SQL
+DROP TABLESPACE 表領域名 INCLUDING CONTENTS AND DATAFILES;
+```
 
+- 表領域のオフライン化
 
+```SQL
+ALTER TABLESPACE 表領域名 OFFLINE;
+```
+
+- **表領域を削除すると表領域に格納されているオブジェクトも削除される。**
+
+- **オブジェクトのデータだけでなく、データディクショナリに格納されているオブジェクトの定義も削除される。**
+
+- **EM Expressを使用して表領域を削除すると、デフォルトで、表領域に対応付けられているデータファイルも削除される。**
 
 
 
