@@ -33,7 +33,7 @@ CREATE USER ユーザー名
     IDENTIFIED BY パスワード
     [DEFAULT TABLESPACE 表領域名]
     [TEMPORARY TABLESPACE 表領域名]
-    [OUOTA サイズ ON 表領域名]
+    [QUOTA サイズ ON 表領域名]
     [PROFILE プロファイル];
 ```
 
