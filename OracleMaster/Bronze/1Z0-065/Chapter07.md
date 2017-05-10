@@ -50,12 +50,22 @@ CREATE USER ユーザー名
 
 - データベース作成時にサンプルスキーマを作成すると、「HR(Human Resources)」、「OE(Order Entry)」、「SH(Sales History)」などの**サンプルスキーマユーザー**が作成されます。
 
-
 **ユーザー属性の変更　★★★★**
 
+- ユーザー属性は、ユーザーアカウントお作成後に**変更できます**。
 
+- ```EM Express```または```SQL文```を使用した、ユーザー属性を変更できる。
 
+- SQL文を使用したユーザー属性の変更
 
+```SQL
+ALTER USER ユーザー名
+    [IDENTIFIED BY パスワード]
+    [DEFAULT TABLESPACE 表領域名]
+    [TEMPORARY TABLESPACE 表領域名]
+    [QUOTA サイズ ON 表領域名]
+    [PROFILE プロファイル];
+```
 
 
 
