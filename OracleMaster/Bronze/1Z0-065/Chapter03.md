@@ -31,7 +31,7 @@ dispatchers="(PROTOCOL=TCP)(SERVICE=<sid>XDB)"
 3. DBMS_XDB_CONFIG.sethTTPSPortプロシージャを実行して、ポートを指定する。(このプロシージャを実行するには、SYSDBAとして接続する必要がある。)
 
 ```sql
-exe DBMS_XDB_CONFIG.setHTTPSPort(5000):
+exec DBMS_XDB_CONFIG.setHTTPSPort(5000):
 ```
 
 ## 3.2 EM Expressの使用方法
